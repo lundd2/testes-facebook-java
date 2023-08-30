@@ -22,9 +22,9 @@ public class ContaTeste extends BaseTest {
 	public void test1_EntrarSemLogin() { 
 		loginPage.entrar();
 		
-//		Assert.assertEquals("O email ou o número de celular que você inseriu não está conectado a uma conta. Encontre sua conta e entre.",
-//				loginPage.obterMensagemErroLogin());
-		Assert.assertEquals("Credenciais inválidas", senhaPage.obterMensagemErroSpam());
+		Assert.assertEquals("O email ou o número de celular que você inseriu não está conectado a uma conta. Encontre sua conta e entre.",
+				loginPage.obterMensagemErroLogin());
+//		Assert.assertEquals("Credenciais inválidas", senhaPage.obterMensagemErroSpam());
 		
 	}
 	
@@ -33,10 +33,10 @@ public class ContaTeste extends BaseTest {
 		loginPage.setEmail("lund@gmail.com");
 		loginPage.entrar();
 		
-//		Assert.assertEquals("Não foi possível encontrar uma conta que corresponda ao que você inseriu, "
-//				+ "mas encontramos uma que corresponde aproximadamente.",
-//				loginPage.obterMensagemErroLogin2());
-		Assert.assertEquals("Credenciais inválidas", senhaPage.obterMensagemErroSpam());
+		Assert.assertEquals("Não foi possível encontrar uma conta que corresponda ao que você inseriu, "
+				+ "mas encontramos uma que corresponde aproximadamente.",
+				loginPage.obterMensagemErroLogin2());
+//		Assert.assertEquals("Credenciais inválidas", senhaPage.obterMensagemErroSpam());
 	}
 	
 	@Test
